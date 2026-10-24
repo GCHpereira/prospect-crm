@@ -1,0 +1,6 @@
+# Copie para .dev.vars (não versionado) para `npm run dev`.
+# Em produção estes três valores são SECRETS do Worker (painel Cloudflare > Settings > Variables and Secrets).
+# Sem eles a API recusa toda requisição (fail-closed).
+ACCESS_TEAM_DOMAIN=seuteam.cloudflareaccess.com
+ACCESS_AUD=
+ALLOWED_EMAIL=voce@example.com

@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f6f7f9;
+  --foreground: #18181b;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+.field {
+  @apply w-full rounded-lg border border-zinc-300 bg-white px-3 py-2.5 text-base outline-none focus:border-emerald-600 focus:ring-2 focus:ring-emerald-600/20;
+}
+.btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-sm font-medium transition active:scale-[.98] disabled:opacity-50;
+}
+.btn-primary { @apply bg-zinc-900 text-white hover:bg-zinc-700; }
+.btn-ghost { @apply border border-zinc-300 bg-white text-zinc-800 hover:bg-zinc-50; }
+.card { @apply rounded-xl border border-zinc-200 bg-white shadow-sm; }

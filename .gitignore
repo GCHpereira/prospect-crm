@@ -1,0 +1,39 @@
+# dependências
+/node_modules
+
+# build e saídas locais
+/dist/
+/.vinext/
+/.cloudflare/
+/.wrangler/
+*.tsbuildinfo
+next-env.d.ts
+/coverage
+.next/
+
+# ambiente e segredos (os arquivos .example são versionados)
+.env*
+!.env.example
+.dev.vars*
+!.dev.vars.example
+*.pem
+*.key
+
+# dados locais: bancos, backups, planilhas e logs (o modelo de colunas em public/ é a exceção)
+*.sqlite
+*.sqlite3
+*.db
+*.bak
+*.xlsx
+*.xls
+*.csv
+!public/modelo-leads.csv
+*.log
+npm-debug.log*
+
+# editor / sistema / ferramentas de agente
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.claude/
